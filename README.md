@@ -1,1 +1,30 @@
-<pre lang="markdown"> ```markdown # 🛡️ NS WebScanner **NS WebScanner** is a web-based vulnerability scanning tool that evaluates the security posture of websites by identifying common misconfigurations and vulnerabilities. It extends the core functionalities of **reNgine** by adding SSL/TLS analysis, security header checks, and basic AI-assisted reporting. ## 🔍 Features - 🌐 URL validation and sanitization - 🔒 SSL/TLS certificate inspection (validity, issuer, expiry) - 🧾 HTTP security header analysis (CSP, HSTS, X-Frame-Options, etc.) - 💥 Vulnerability scanning: - SQL Injection (SQLi) - Cross-Site Scripting (XSS) - Open Redirects - 🧠 AI-powered assistance (via Gemini Pro) for vulnerability explanations - 📈 Custom scoring system based on severity and exploitability - 📋 Real-time report with suggestions for each vulnerability ## 🧠 AI Integration Utilizes **Gemini 1.5 Pro** to provide contextual responses and remediation advice, with rate limiting and fallback mechanisms. ## ⚙️ Tech Stack - **Backend**: Python, Flask - **Frontend**: HTML, CSS, Bootstrap - **AI API**: Google Generative AI (Gemini) - **Libraries**: `requests`, `urllib`, `socket`, `ssl`, `whois` ## 🗂️ Project Structure ``` NS-webscanner/ ├── app.py # Flask app ├── scanner.py # Vulnerability scanner class ├── ai_module.py # AI integration ├── templates/ │ └── index.html # Web UI ├── static/ │ └── style.css # Styling ├── .env # API keys & secrets └── README.md # Project documentation ``` ## 🚀 How to Run 1. Clone the repository: ```bash git clone https://github.com/yourusername/ns-webscanner.git cd ns-webscanner ``` 2. Create a `.env` file and add your Gemini API key: ``` GEMINI_API_KEY=your_key_here ``` 3. Install dependencies: ```bash pip install -r requirements.txt ``` 4. Run the app: ```bash python app.py ``` 5. Open your browser and visit: ``` http://localhost:5000 ``` ## 🧮 Scoring Formula ``` Severity Score (S) = (C * W1) + (E * W2) + (P * W3) ``` - **C** = Confidence (0–1) - **E** = Exploitability (0–1) - **P** = Potential Impact (0–1) - **W1, W2, W3** = Weight factors (default: 0.4, 0.3, 0.3) ## 📈 Sample Output | Website | Score | SQLi | XSS | Headers | SSL/TLS | Redirect | |---------------|-------|--------------|------------------|--------------------|------------------|----------| | Instagram | 44% | Yes (6) | No | 4/5 Present | Valid (DigiCert) | None | | The Hindu | 52% | Yes (6) | No | All Present | Valid (Google) | None | | DRDO | 74% | Yes (1) | Potential Vector | Missing CSP, HSTS | Valid (GeoTrust) | None | | Amazon India | 20% | Yes (7) | Potential Vector | Missing CSP, XCTO | Valid (DigiCert) | None | ## 🛠️ Future Improvements - AI-generated remediation guides - PDF/Email reporting - CSRF, Auth Bypass detection - Threat intelligence feeds - Mobile/PWA version ## ⚠️ Disclaimer This tool is intended **for educational and authorized security testing only**. Unauthorized scanning of systems you do not own is **illegal and unethical**. ## 📬 Contact If you'd like to contribute, open an issue or submit a pull request. You can also connect via email or GitHub Discussions. --- > Built with ❤️ to make the web safer, one scan at a time. ``` </pre>
+# 🛡️ NS WebScanner
+
+**NS WebScanner** is a web-based vulnerability scanning tool that evaluates the security posture of websites by identifying common misconfigurations and vulnerabilities. It extends the core functionalities of **reNgine** by adding SSL/TLS analysis, security header checks, and basic AI-assisted reporting.
+
+## 🔍 Features
+
+- 🌐 URL validation and sanitization
+- 🔒 SSL/TLS certificate inspection (validity, issuer, expiry)
+- 🧾 HTTP security header analysis (CSP, HSTS, X-Frame-Options, etc.)
+- 💥 Vulnerability scanning:
+  - SQL Injection (SQLi)
+  - Cross-Site Scripting (XSS)
+  - Open Redirects
+- 🧠 AI-powered assistance (via Gemini Pro) for vulnerability explanations
+- 📈 Custom scoring system based on severity and exploitability
+- 📋 Real-time report with suggestions for each vulnerability
+
+## 🧠 AI Integration
+
+Utilizes **Gemini 1.5 Pro** to provide contextual responses and remediation advice, with rate limiting and fallback mechanisms.
+
+## ⚙️ Tech Stack
+
+- **Backend**: Python, Flask
+- **Frontend**: HTML, CSS, Bootstrap
+- **AI API**: Google Generative AI (Gemini)
+- **Libraries**: `requests`, `urllib`, `socket`, `ssl`, `whois`
+
+
+
