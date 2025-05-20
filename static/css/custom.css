@@ -1,0 +1,67 @@
+.card {
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--bs-border-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.vulnerability-item {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid var(--bs-danger);
+    background-color: var(--bs-dark);
+    border-radius: 5px;
+}
+
+.secure-item {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid var(--bs-success);
+    background-color: var(--bs-dark);
+    border-radius: 5px;
+}
+
+.header-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--bs-border-color);
+    font-weight: bold;
+    text-align: left;
+}
+
+.security-score {
+    font-size: 5.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+/* Fix chart scroll trap */
+#securityChart {
+    touch-action: none;
+    overscroll-behavior: contain;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-warning {
+    color: var(--bs-warning);
+    font-style: italic;
+}
+
+/* New styling for the badge inside results */
+.badge-secure {
+    background-color: #28a745;
+}
+
+.badge-vulnerable {
+    background-color: #dc3545;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+}
