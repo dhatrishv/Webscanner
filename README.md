@@ -38,4 +38,6 @@ NS-webscanner/
 - │ └──  main.js # presenting output of result in interface
 - ├── .env # API keys & secrets
 - └── README.md # Project documentation
+# How to setup 
+
 
