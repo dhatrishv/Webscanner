@@ -15,7 +15,7 @@
 - 📈 Custom scoring system based on severity and exploitability
 - 📋 Real-time report with suggestions for each vulnerability
 
-## 🧠 AI Integration
+## 🧠 AI Integration (Partially Integrated)
 
 Utilizes **Gemini 1.5 Pro** to provide contextual responses and remediation advice, with rate limiting and fallback mechanisms.
 
@@ -36,8 +36,8 @@ NS-webscanner/
 - ├── static/
 - │ └── style.css # Styling 
 - │ └──  main.js # presenting output of result in interface
-- ├── .env # API keys & secrets
 - └── README.md # Project documentation
+
 
 ## 📝 Step-by-Step Setup Guide
 
@@ -51,7 +51,7 @@ Follow these steps to run ReNgine-WebScanner locally on your machine:
 ### 3️⃣ Place the files as structure mentioned above
 ### 4️⃣ Run the main.py
         In Terminal:
-        python app.py
+        python main.py
         
 ### 5️⃣ Open in Browser
       Type http://localhost:5000
