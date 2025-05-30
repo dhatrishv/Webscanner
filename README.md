@@ -29,13 +29,13 @@ Utilizes **Gemini 1.5 Pro** to provide contextual responses and remediation advi
 ## 🗂️ Project Structure
 
 NS-webscanner/
-├── main.py # Flask app
-├── scanner.py # Vulnerability scanner class
-├── ai_module.py # AI integration
-├── templates/
-│ └── index.html # Web UI
-├── static/
-│ └── style.css # Styling
-├── .env # API keys & secrets
-└── README.md # Project documentation
+- ├── main.py # Flask app
+- ├── scanner.py # Vulnerability scanner class
+- ├── ai_module.py # AI integration
+- ├── templates/
+- │ └── index.html # Web UI
+- ├── static/
+- │ └── style.css # Styling
+- ├── .env # API keys & secrets
+- └── README.md # Project documentation
 
