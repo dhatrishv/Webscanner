@@ -1,6 +1,6 @@
-# 🛡️  WebScanner
+# 🛡️ ReNgine - Web Security Scanner
 
-**WebScanner** is a web-based vulnerability scanning tool that evaluates the security posture of websites by identifying common misconfigurations and vulnerabilities. It extends the core functionalities of **reNgine** by adding SSL/TLS analysis, security header checks, and basic AI-assisted reporting.
+**ReNgine** is a web-based vulnerability scanning tool that evaluates the security posture of websites by identifying common misconfigurations and vulnerabilities. It extends the core functionalities of **reNgine** by adding SSL/TLS analysis, security header checks, and basic AI-assisted reporting.
 
 ## 🔍 Features
 
@@ -38,6 +38,27 @@ NS-webscanner/
 - │ └──  main.js # presenting output of result in interface
 - ├── .env # API keys & secrets
 - └── README.md # Project documentation
-# How to setup 
+
+## 📝 Step-by-Step Setup Guide
+
+Follow these steps to run ReNgine-WebScanner locally on your machine:
+### 1️⃣ Clone the Repository
+        vs terminal:
+        git clone https://github.com/dhatrishv/ns-webscanner.git
+        cd ns-webscanner
+        
+### 2️⃣ Download the requirements (Refer the requirements.txt)
+### 3️⃣ Place the files as structure mentioned above
+### 4️⃣ Run the main.py
+        In Terminal:
+        python app.py
+        
+### 5️⃣ Open in Browser
+      Type http://localhost:5000
+
+
+
+
+ 
 
 
