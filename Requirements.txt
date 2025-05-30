@@ -1,0 +1,33 @@
+# Core Web Framework
+flask==3.0.2
+python-dotenv==1.0.0
+
+# Security Scanning Dependencies
+requests==2.31.0
+beautifulsoup4==4.12.3
+urllib3==2.0.7
+pyopenssl==23.3.0
+
+# URL Parsing Utilities
+urllib3==2.0.7
+
+# SSL/TLS Scanning
+pyopenssl==23.3.0
+
+# Gemini AI Integration
+google-generativeai==0.3.2
+
+# Retry Mechanism
+tenacity==8.2.3
+
+# System/Network
+requests==2.31.0
+
+# Development & Testing
+pytest==8.0.0
+pytest-cov==4.1.0
+flake8==6.1.0
+
+# Production (Optional)
+gunicorn==21.2.0
+gevent==23.9.1
