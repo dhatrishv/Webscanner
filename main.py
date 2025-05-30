@@ -24,7 +24,7 @@ app.secret_key = os.environ.get("SESSION_SECRET", "default-secret-key")
 try:
     logger.info("Initializing Gemini client")
     # Get API key from environment variable or use a default one
-    api_key = os.environ.get("GEMINI_API_KEY", "AIzaSyDSkWG-S4os6NaArdb5RWXS93bubUMapZQ")
+    api_key = os.environ.get("GEMINI_API_KEY", "ENTER_the_API_key")
     genai.configure(api_key=api_key)
     
     generation_config = {
