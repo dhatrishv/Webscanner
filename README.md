@@ -1,6 +1,6 @@
-# 🛡️ ReNgine - Web Security Scanner
+# 🛡️ VigilScan - Web Security Scanner
 
-**ReNgine** is a web-based vulnerability scanning tool that evaluates the security posture of websites by identifying common misconfigurations and vulnerabilities. It extends the core functionalities of **reNgine** by adding SSL/TLS analysis, security header checks, and basic AI-assisted reporting.
+**VigilScan** is a web-based vulnerability scanning tool that evaluates the security posture of websites by identifying common misconfigurations and vulnerabilities. It extends the core functionalities of present Web scanners by adding SSL/TLS analysis, security header checks, and basic AI-assisted reporting.
 
 ## 🔍 Features
 
